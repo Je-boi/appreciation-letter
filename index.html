@@ -7,10 +7,10 @@
     body {
       text-align: center;
       font-family: 'Patrick Hand', cursive;
-      background: url('https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif') no-repeat center center;
-      background-size: contain;
-      background-attachment: fixed;
+      background: url('https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif') no-repeat center center fixed;
+      background-size: cover;
       margin: 0;
+      padding: 0;
       height: 100vh;
       display: flex;
       justify-content: center;
@@ -19,34 +19,35 @@
     }
     #gif {
       display: none;
-      width: 350px;
+      width: 400px;
       margin-top: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     }
     #longMessage {
       display: none;
       margin-top: 20px;
       padding: 20px;
       max-width: 90%;
-      width: 450px;
+      width: 500px;
       border: 1px solid #ccc;
-      border-radius: 10px;
+      border-radius: 15px;
       background-color: #fff;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       text-align: left;
-      font-size: 18px;
+      font-size: 20px;
+      line-height: 1.8;
     }
     button {
-      padding: 12px 24px;
+      padding: 15px 30px;
       margin-top: 20px;
       cursor: pointer;
       background-color: #ff4d88;
       color: white;
       border: none;
-      border-radius: 5px;
+      border-radius: 8px;
+      font-size: 22px;
       transition: 0.3s;
-      font-size: 18px;
     }
     button:hover {
       background-color: #ff3366;
@@ -54,12 +55,13 @@
     a {
       text-decoration: none;
       color: white;
-      font-size: 20px;
+      font-size: 22px;
       font-weight: bold;
       background-color: rgba(255, 77, 136, 0.9);
-      padding: 12px 24px;
-      border-radius: 5px;
+      padding: 14px 28px;
+      border-radius: 8px;
       display: inline-block;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
     a:hover {
       background-color: rgba(255, 51, 102, 0.9);
