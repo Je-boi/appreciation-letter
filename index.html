@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="A Special Surprise! 🎁" />
-  <meta name="twitter:description" content="Click for a surprise!" />
-  <meta name="twitter:image" content="" />
-
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
@@ -15,43 +10,43 @@
       background: url('https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif') no-repeat center center fixed;
       background-size: cover;
       margin: 0;
-      padding: 0;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      transition: background 1s ease-in-out; /* Smooth transition */
     }
     #gif {
       display: none;
-      width: 500px;
-      margin-top: 20px;
+      width: 600px; /* Much bigger */
+      margin-top: 30px;
       border-radius: 15px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
     }
     #longMessage {
       display: none;
-      margin-top: 20px;
+      margin-top: 30px;
       padding: 30px;
       max-width: 95%;
-      width: 600px;
+      width: 600px; /* Bigger box */
       border: 2px solid #ccc;
-      border-radius: 20px;
+      border-radius: 15px;
       background-color: #fff;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
       text-align: left;
-      font-size: 24px;
+      font-size: 24px; /* Bigger text */
       line-height: 2;
     }
     button {
-      padding: 18px 36px;
+      padding: 20px 40px; /* Bigger button */
       margin-top: 30px;
       cursor: pointer;
       background-color: #ff4d88;
       color: white;
       border: none;
-      border-radius: 10px;
-      font-size: 28px;
+      font-size: 24px; /* Bigger button text */
+      border-radius: 8px;
       transition: 0.3s;
     }
     button:hover {
@@ -60,22 +55,23 @@
     a {
       text-decoration: none;
       color: white;
-      font-size: 28px;
+      font-size: 28px; /* Bigger link text */
       font-weight: bold;
       background-color: rgba(255, 77, 136, 0.9);
-      padding: 18px 36px;
-      border-radius: 12px;
+      padding: 15px 30px;
+      border-radius: 8px;
       display: inline-block;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
     }
     a:hover {
       background-color: rgba(255, 51, 102, 0.9);
     }
     h3 {
       color: #ff4d88;
+      font-size: 28px; /* Bigger heading */
     }
     p {
       line-height: 2;
+      font-size: 24px;
       color: #555;
     }
   </style>
@@ -108,6 +104,7 @@
     document.getElementById("gif").style.display = "block";
     document.getElementById("nextBtn").style.display = "inline-block";
     document.getElementById("startLink").style.display = "none"; // Hide the "Click me for a surprise!" link
+    document.body.style.background = "linear-gradient(to bottom right, #ffccf9, #ffe6f2)"; // New soft background
   }
 
   // Show Popup with a softer, funnier message
